@@ -1,6 +1,5 @@
 from app import db
 from app.models import User, Post
-
 j = User(username='john', email='john@example.com')
 s = User(username='susan', email='susan@example.com')
 db.session.add(j)

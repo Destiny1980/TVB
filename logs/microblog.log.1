@@ -1,0 +1,78 @@
+2022-03-08 13:18:28,992 ERROR: Exception on /login [POST] [in C:\Users\Destiny\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py:1457]
+Traceback (most recent call last):
+  File "C:\Users\Destiny\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Destiny\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Destiny\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Destiny\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Destiny\Downloads\Cloud Web Application Development IntroductionFile sem 2\microblog Flask Lab05\microblog\app\routes.py", line 41, in login
+    if user is None or not user.check_password(form.password.data):
+  File "C:\Users\Destiny\Downloads\Cloud Web Application Development IntroductionFile sem 2\microblog Flask Lab05\microblog\app\models.py", line 35, in check_password
+    return check_password_hash(self.password_hash, password)
+  File "C:\Users\Destiny\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\security.py", line 215, in check_password_hash
+    if pwhash.count("$") < 2:
+AttributeError: 'NoneType' object has no attribute 'count'
+2022-03-08 13:24:57,682 INFO: Microblog startup [in C:\Users\Destiny\Downloads\Cloud Web Application Development IntroductionFile sem 2\microblog Flask Lab05\microblog\app\__init__.py:43]
+2022-03-08 13:30:51,182 INFO: Microblog startup [in C:\Users\Destiny\Downloads\Cloud Web Application Development IntroductionFile sem 2\microblog Flask Lab05\microblog\app\__init__.py:43]
+2022-03-08 16:07:16,735 INFO: Microblog startup [in C:\Users\Destiny\Downloads\Cloud Web Application Development IntroductionFile sem 2\microblog Flask Lab05\microblog\app\__init__.py:43]
+2022-03-08 16:07:57,877 INFO: Microblog startup [in C:\Users\Destiny\Downloads\Cloud Web Application Development IntroductionFile sem 2\microblog Flask Lab05\microblog\app\__init__.py:43]
+2022-03-08 16:08:07,560 ERROR: Exception on / [GET] [in C:\Users\Destiny\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py:1457]
+Traceback (most recent call last):
+  File "C:\Users\Destiny\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Destiny\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Destiny\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Destiny\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Destiny\AppData\Local\Programs\Python\Python39\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\Destiny\Downloads\Cloud Web Application Development IntroductionFile sem 2\microblog Flask Lab05\microblog\app\routes.py", line 29, in index
+    posts = current_user.followed_post().paginate(
+AttributeError: 'User' object has no attribute 'followed_post'
+2022-03-08 16:08:11,521 ERROR: Exception on / [GET] [in C:\Users\Destiny\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py:1457]
+Traceback (most recent call last):
+  File "C:\Users\Destiny\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Destiny\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Destiny\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Destiny\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Destiny\AppData\Local\Programs\Python\Python39\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\Destiny\Downloads\Cloud Web Application Development IntroductionFile sem 2\microblog Flask Lab05\microblog\app\routes.py", line 29, in index
+    posts = current_user.followed_post().paginate(
+AttributeError: 'User' object has no attribute 'followed_post'
+2022-03-08 16:26:14,739 INFO: Microblog startup [in C:\Users\Destiny\Downloads\Cloud Web Application Development IntroductionFile sem 2\microblog Flask Lab05\microblog\app\__init__.py:43]
+2022-03-08 16:30:26,400 INFO: Microblog startup [in C:\Users\Destiny\Downloads\Cloud Web Application Development IntroductionFile sem 2\microblog Flask Lab05\microblog\app\__init__.py:43]
+2022-03-08 16:32:15,101 INFO: Microblog startup [in C:\Users\Destiny\Downloads\Cloud Web Application Development IntroductionFile sem 2\microblog Flask Lab05\microblog\app\__init__.py:43]
+2022-03-08 16:37:06,393 INFO: Microblog startup [in C:\Users\Destiny\Downloads\Cloud Web Application Development IntroductionFile sem 2\microblog Flask Lab05\microblog\app\__init__.py:43]
+2022-03-14 10:46:04,349 INFO: Microblog startup [in C:\Users\Destiny\Downloads\Cloud Web Application Development IntroductionFile sem 2\microblog Flask Lab05\microblog\app\__init__.py:43]
+2022-03-14 11:11:17,303 INFO: Microblog startup [in C:\Users\Destiny\Downloads\Cloud Web Application Development IntroductionFile sem 2\microblog Flask Lab05\microblog\app\__init__.py:45]
+2022-03-14 11:36:22,559 INFO: Microblog startup [in C:\Users\Destiny\Downloads\Cloud Web Application Development IntroductionFile sem 2\microblog Flask Lab05\microblog\app\__init__.py:47]
+2022-03-17 22:20:14,907 INFO: Microblog startup [in C:\Users\Destiny\Downloads\Cloud Web Application Development IntroductionFile sem 2\microblog Flask Lab05\microblog\app\__init__.py:47]
+2022-03-21 11:14:15,263 INFO: Microblog startup [in C:\Users\Destiny\Downloads\Cloud Web Application Development IntroductionFile sem 2\microblog Flask Lab05\microblog\app\__init__.py:49]
+2022-03-21 11:18:07,844 INFO: Microblog startup [in C:\Users\Destiny\Downloads\Cloud Web Application Development IntroductionFile sem 2\microblog Flask Lab05\microblog\app\__init__.py:49]
+2022-03-21 14:10:56,874 INFO: Microblog startup [in C:\Users\Destiny\Downloads\Cloud Web Application Development IntroductionFile sem 2\microblog Flask Lab05\microblog\app\__init__.py:52]
+2022-03-21 15:27:46,643 INFO: Microblog startup [in C:\Users\Destiny\Downloads\Cloud Web Application Development IntroductionFile sem 2\microblog Flask Lab05\microblog\app\__init__.py:52]
+2022-03-21 15:27:59,874 INFO: Microblog startup [in C:\Users\Destiny\Downloads\Cloud Web Application Development IntroductionFile sem 2\microblog Flask Lab05\microblog\app\__init__.py:52]
+2022-03-21 15:36:56,295 INFO: Microblog startup [in C:\Users\Destiny\Downloads\Cloud Web Application Development IntroductionFile sem 2\microblog Flask Lab05\microblog\app\__init__.py:52]
+2022-03-22 10:41:16,740 INFO: Microblog startup [in C:\Users\Destiny\Downloads\Cloud Web Application Development IntroductionFile sem 2\microblog Flask Lab05\microblog\app\__init__.py:74]
+2022-03-22 10:42:18,392 INFO: Microblog startup [in C:\Users\Destiny\Downloads\Cloud Web Application Development IntroductionFile sem 2\microblog Flask Lab05\microblog\app\__init__.py:74]
+2022-03-22 10:42:58,777 INFO: Microblog startup [in C:\Users\Destiny\Downloads\Cloud Web Application Development IntroductionFile sem 2\microblog Flask Lab05\microblog\app\__init__.py:74]
+2022-04-11 21:51:02,925 INFO: Microblog startup [in C:\Users\Destiny\Downloads\Cloud Web Application Development IntroductionFile sem 2\microblog Flask Lab05\microblog\app\__init__.py:74]
+2022-04-11 21:55:17,054 INFO: Microblog startup [in C:\Users\Destiny\Downloads\Cloud Web Application Development IntroductionFile sem 2\microblog Flask Lab05\microblog\app\__init__.py:74]
+2022-04-11 21:56:13,780 INFO: Microblog startup [in C:\Users\Destiny\Downloads\Cloud Web Application Development IntroductionFile sem 2\microblog Flask Lab05\microblog\app\__init__.py:74]
+2022-04-11 21:56:54,376 INFO: Microblog startup [in C:\Users\Destiny\Downloads\Cloud Web Application Development IntroductionFile sem 2\microblog Flask Lab05\microblog\app\__init__.py:74]
+2022-04-11 21:57:26,945 INFO: Microblog startup [in C:\Users\Destiny\Downloads\Cloud Web Application Development IntroductionFile sem 2\microblog Flask Lab05\microblog\app\__init__.py:74]
+2022-04-11 21:59:15,319 INFO: Microblog startup [in C:\Users\Destiny\Downloads\Cloud Web Application Development IntroductionFile sem 2\microblog Flask Lab05\microblog\app\__init__.py:74]
+2022-04-11 22:00:16,352 INFO: Microblog startup [in C:\Users\Destiny\Downloads\Cloud Web Application Development IntroductionFile sem 2\microblog Flask Lab05\microblog\app\__init__.py:74]
+2022-04-11 22:01:51,755 INFO: Microblog startup [in C:\Users\Destiny\Downloads\Cloud Web Application Development IntroductionFile sem 2\microblog Flask Lab05\microblog\app\__init__.py:74]
+2022-04-11 22:02:16,281 INFO: Microblog startup [in C:\Users\Destiny\Downloads\Cloud Web Application Development IntroductionFile sem 2\microblog Flask Lab05\microblog\app\__init__.py:74]
+2022-04-11 22:02:46,947 INFO: Microblog startup [in C:\Users\Destiny\Downloads\Cloud Web Application Development IntroductionFile sem 2\microblog Flask Lab05\microblog\app\__init__.py:74]

@@ -1,0 +1,94 @@
+2022-03-08 09:52:51,740 ERROR: Exception on /login [POST] [in C:\Users\Destiny\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py:1457]
+Traceback (most recent call last):
+  File "C:\Users\Destiny\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Destiny\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Destiny\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Destiny\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Destiny\Downloads\Cloud Web Application Development IntroductionFile sem 2\microblog Flask Lab05\microblog\app\routes.py", line 40, in login
+    user = User.query.filter_by(username=form.username.data).first()
+  File "C:\Users\Destiny\AppData\Local\Programs\Python\Python39\lib\site-packages\flask_sqlalchemy\__init__.py", line 550, in __get__
+    mapper = orm.class_mapper(type)
+  File "C:\Users\Destiny\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\base.py", line 442, in class_mapper
+    mapper = _inspect_mapped_class(class_, configure=configure)
+  File "C:\Users\Destiny\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\base.py", line 421, in _inspect_mapped_class
+    mapper._check_configure()
+  File "C:\Users\Destiny\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\mapper.py", line 1900, in _check_configure
+    _configure_registries({self.registry}, cascade=True)
+  File "C:\Users\Destiny\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\mapper.py", line 3418, in _configure_registries
+    _do_configure_registries(registries, cascade)
+  File "C:\Users\Destiny\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\mapper.py", line 3453, in _do_configure_registries
+    raise e
+sqlalchemy.exc.InvalidRequestError: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'mapped class User->user'. Original exception was: 'TableClause' object has no attribute 'metadata'
+2022-03-08 09:54:00,866 ERROR: Exception on /login [POST] [in C:\Users\Destiny\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py:1457]
+Traceback (most recent call last):
+  File "C:\Users\Destiny\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Destiny\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Destiny\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Destiny\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Destiny\Downloads\Cloud Web Application Development IntroductionFile sem 2\microblog Flask Lab05\microblog\app\routes.py", line 40, in login
+    user = User.query.filter_by(username=form.username.data).first()
+  File "C:\Users\Destiny\AppData\Local\Programs\Python\Python39\lib\site-packages\flask_sqlalchemy\__init__.py", line 550, in __get__
+    mapper = orm.class_mapper(type)
+  File "C:\Users\Destiny\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\base.py", line 442, in class_mapper
+    mapper = _inspect_mapped_class(class_, configure=configure)
+  File "C:\Users\Destiny\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\base.py", line 421, in _inspect_mapped_class
+    mapper._check_configure()
+  File "C:\Users\Destiny\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\mapper.py", line 1900, in _check_configure
+    _configure_registries({self.registry}, cascade=True)
+  File "C:\Users\Destiny\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\mapper.py", line 3418, in _configure_registries
+    _do_configure_registries(registries, cascade)
+  File "C:\Users\Destiny\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\mapper.py", line 3453, in _do_configure_registries
+    raise e
+sqlalchemy.exc.InvalidRequestError: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'mapped class User->user'. Original exception was: 'TableClause' object has no attribute 'metadata'
+2022-03-08 09:54:14,478 ERROR: Exception on /register [POST] [in C:\Users\Destiny\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py:1457]
+Traceback (most recent call last):
+  File "C:\Users\Destiny\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Destiny\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Destiny\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Destiny\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Destiny\Downloads\Cloud Web Application Development IntroductionFile sem 2\microblog Flask Lab05\microblog\app\routes.py", line 63, in register
+    if form.validate_on_submit():
+  File "C:\Users\Destiny\AppData\Local\Programs\Python\Python39\lib\site-packages\flask_wtf\form.py", line 86, in validate_on_submit
+    return self.is_submitted() and self.validate()
+  File "C:\Users\Destiny\AppData\Local\Programs\Python\Python39\lib\site-packages\wtforms\form.py", line 329, in validate
+    return super().validate(extra)
+  File "C:\Users\Destiny\AppData\Local\Programs\Python\Python39\lib\site-packages\wtforms\form.py", line 146, in validate
+    if not field.validate(self, extra):
+  File "C:\Users\Destiny\AppData\Local\Programs\Python\Python39\lib\site-packages\wtforms\fields\core.py", line 242, in validate
+    stop_validation = self._run_validation_chain(form, chain)
+  File "C:\Users\Destiny\AppData\Local\Programs\Python\Python39\lib\site-packages\wtforms\fields\core.py", line 262, in _run_validation_chain
+    validator(form, self)
+  File "C:\Users\Destiny\Downloads\Cloud Web Application Development IntroductionFile sem 2\microblog Flask Lab05\microblog\app\forms.py", line 25, in validate_username
+    user = User.query.filter_by(username=username.data).first()
+  File "C:\Users\Destiny\AppData\Local\Programs\Python\Python39\lib\site-packages\flask_sqlalchemy\__init__.py", line 550, in __get__
+    mapper = orm.class_mapper(type)
+  File "C:\Users\Destiny\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\base.py", line 442, in class_mapper
+    mapper = _inspect_mapped_class(class_, configure=configure)
+  File "C:\Users\Destiny\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\base.py", line 421, in _inspect_mapped_class
+    mapper._check_configure()
+  File "C:\Users\Destiny\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\mapper.py", line 1900, in _check_configure
+    _configure_registries({self.registry}, cascade=True)
+  File "C:\Users\Destiny\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\mapper.py", line 3418, in _configure_registries
+    _do_configure_registries(registries, cascade)
+  File "C:\Users\Destiny\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\mapper.py", line 3453, in _do_configure_registries
+    raise e
+sqlalchemy.exc.InvalidRequestError: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'mapped class User->user'. Original exception was: 'TableClause' object has no attribute 'metadata'
+2022-03-08 12:10:46,101 INFO: Microblog startup [in C:\Users\Destiny\Downloads\Cloud Web Application Development IntroductionFile sem 2\microblog Flask Lab05\microblog\app\__init__.py:43]
+2022-03-08 12:14:00,800 INFO: Microblog startup [in C:\Users\Destiny\Downloads\Cloud Web Application Development IntroductionFile sem 2\microblog Flask Lab05\microblog\app\__init__.py:43]
+2022-03-08 12:21:15,263 INFO: Microblog startup [in C:\Users\Destiny\Downloads\Cloud Web Application Development IntroductionFile sem 2\microblog Flask Lab05\microblog\app\__init__.py:43]
+2022-03-08 12:26:48,220 INFO: Microblog startup [in C:\Users\Destiny\Downloads\Cloud Web Application Development IntroductionFile sem 2\microblog Flask Lab05\microblog\app\__init__.py:43]
+2022-03-08 12:27:03,613 INFO: Microblog startup [in C:\Users\Destiny\Downloads\Cloud Web Application Development IntroductionFile sem 2\microblog Flask Lab05\microblog\app\__init__.py:43]
+2022-03-08 12:27:38,271 INFO: Microblog startup [in C:\Users\Destiny\Downloads\Cloud Web Application Development IntroductionFile sem 2\microblog Flask Lab05\microblog\app\__init__.py:43]
+2022-03-08 13:15:29,901 INFO: Microblog startup [in C:\Users\Destiny\Downloads\Cloud Web Application Development IntroductionFile sem 2\microblog Flask Lab05\microblog\app\__init__.py:43]

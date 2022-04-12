@@ -29,9 +29,12 @@
                     <li><a href="{{ url_for('main.explore') }}">{{ _('TVB Event Power') }}</a></li>
                     <li><a href="{{ url_for('main.explore') }}">{{ _('TVB 概覽') }}</a></li>
                 </ul>
-            <iframe width="448" height="251" src="https://www.youtube.com/embed/XukrCcAstlg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <iframe width="448" height="251" src="https://www.youtube.com/embed/yWD3eGwOXfo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <ul class="nav navbar-nav navbar-right">
+
+                <iframe width="448" height="251" src="https://www.youtube.com/embed/XukrCcAstlg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="448" height="251" src="https://www.youtube.com/embed/yWD3eGwOXfo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
                     {% if current_user.is_anonymous %}
                         <li><a href="{{ url_for('auth.login') }}">{{ _('Login') }}</a></li>
                     {% else %}

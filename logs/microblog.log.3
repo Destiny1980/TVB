@@ -1,0 +1,105 @@
+2022-03-08 09:52:32,496 ERROR: Exception on /login [POST] [in C:\Users\Destiny\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py:1457]
+Traceback (most recent call last):
+  File "C:\Users\Destiny\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Destiny\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Destiny\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Destiny\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Destiny\Downloads\Cloud Web Application Development IntroductionFile sem 2\microblog Flask Lab05\microblog\app\routes.py", line 40, in login
+    user = User.query.filter_by(username=form.username.data).first()
+  File "C:\Users\Destiny\AppData\Local\Programs\Python\Python39\lib\site-packages\flask_sqlalchemy\__init__.py", line 550, in __get__
+    mapper = orm.class_mapper(type)
+  File "C:\Users\Destiny\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\base.py", line 442, in class_mapper
+    mapper = _inspect_mapped_class(class_, configure=configure)
+  File "C:\Users\Destiny\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\base.py", line 421, in _inspect_mapped_class
+    mapper._check_configure()
+  File "C:\Users\Destiny\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\mapper.py", line 1900, in _check_configure
+    _configure_registries({self.registry}, cascade=True)
+  File "C:\Users\Destiny\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\mapper.py", line 3418, in _configure_registries
+    _do_configure_registries(registries, cascade)
+  File "C:\Users\Destiny\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\mapper.py", line 3457, in _do_configure_registries
+    mapper._post_configure_properties()
+  File "C:\Users\Destiny\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\mapper.py", line 1917, in _post_configure_properties
+    prop.init()
+  File "C:\Users\Destiny\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\interfaces.py", line 231, in init
+    self.do_init()
+  File "C:\Users\Destiny\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\relationships.py", line 2152, in do_init
+    self._setup_join_conditions()
+  File "C:\Users\Destiny\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\relationships.py", line 2248, in _setup_join_conditions
+    self._join_condition = jc = JoinCondition(
+  File "C:\Users\Destiny\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\relationships.py", line 2645, in __init__
+    self._annotate_fks()
+  File "C:\Users\Destiny\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\relationships.py", line 2890, in _annotate_fks
+    self._annotate_present_fks()
+  File "C:\Users\Destiny\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\relationships.py", line 2943, in _annotate_present_fks
+    self.primaryjoin = visitors.cloned_traverse(
+  File "C:\Users\Destiny\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\sql\visitors.py", line 783, in cloned_traverse
+    obj = clone(
+  File "C:\Users\Destiny\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\sql\visitors.py", line 779, in clone
+    meth(newelem)
+  File "C:\Users\Destiny\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\relationships.py", line 2934, in visit_binary
+    col = is_foreign(binary.left, binary.right)
+  File "C:\Users\Destiny\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\relationships.py", line 2913, in is_foreign
+    if a.references(b):
+  File "C:\Users\Destiny\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\sql\schema.py", line 1737, in references
+    if fk.column.proxy_set.intersection(column.proxy_set):
+  File "C:\Users\Destiny\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\util\langhelpers.py", line 1113, in __get__
+    obj.__dict__[self.__name__] = result = self.fget(obj)
+  File "C:\Users\Destiny\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\sql\schema.py", line 2407, in column
+    parenttable, tablekey, colname = self._resolve_col_tokens()
+  File "C:\Users\Destiny\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\sql\schema.py", line 2331, in _resolve_col_tokens
+    if schema is None and parenttable.metadata.schema is not None:
+AttributeError: 'TableClause' object has no attribute 'metadata'
+2022-03-08 09:52:35,191 ERROR: Exception on /login [POST] [in C:\Users\Destiny\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py:1457]
+Traceback (most recent call last):
+  File "C:\Users\Destiny\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Destiny\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Destiny\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Destiny\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Destiny\Downloads\Cloud Web Application Development IntroductionFile sem 2\microblog Flask Lab05\microblog\app\routes.py", line 40, in login
+    user = User.query.filter_by(username=form.username.data).first()
+  File "C:\Users\Destiny\AppData\Local\Programs\Python\Python39\lib\site-packages\flask_sqlalchemy\__init__.py", line 550, in __get__
+    mapper = orm.class_mapper(type)
+  File "C:\Users\Destiny\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\base.py", line 442, in class_mapper
+    mapper = _inspect_mapped_class(class_, configure=configure)
+  File "C:\Users\Destiny\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\base.py", line 421, in _inspect_mapped_class
+    mapper._check_configure()
+  File "C:\Users\Destiny\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\mapper.py", line 1900, in _check_configure
+    _configure_registries({self.registry}, cascade=True)
+  File "C:\Users\Destiny\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\mapper.py", line 3418, in _configure_registries
+    _do_configure_registries(registries, cascade)
+  File "C:\Users\Destiny\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\mapper.py", line 3453, in _do_configure_registries
+    raise e
+sqlalchemy.exc.InvalidRequestError: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'mapped class User->user'. Original exception was: 'TableClause' object has no attribute 'metadata'
+2022-03-08 09:52:37,735 ERROR: Exception on /login [POST] [in C:\Users\Destiny\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py:1457]
+Traceback (most recent call last):
+  File "C:\Users\Destiny\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Destiny\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Destiny\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Destiny\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Destiny\Downloads\Cloud Web Application Development IntroductionFile sem 2\microblog Flask Lab05\microblog\app\routes.py", line 40, in login
+    user = User.query.filter_by(username=form.username.data).first()
+  File "C:\Users\Destiny\AppData\Local\Programs\Python\Python39\lib\site-packages\flask_sqlalchemy\__init__.py", line 550, in __get__
+    mapper = orm.class_mapper(type)
+  File "C:\Users\Destiny\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\base.py", line 442, in class_mapper
+    mapper = _inspect_mapped_class(class_, configure=configure)
+  File "C:\Users\Destiny\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\base.py", line 421, in _inspect_mapped_class
+    mapper._check_configure()
+  File "C:\Users\Destiny\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\mapper.py", line 1900, in _check_configure
+    _configure_registries({self.registry}, cascade=True)
+  File "C:\Users\Destiny\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\mapper.py", line 3418, in _configure_registries
+    _do_configure_registries(registries, cascade)
+  File "C:\Users\Destiny\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\mapper.py", line 3453, in _do_configure_registries
+    raise e
+sqlalchemy.exc.InvalidRequestError: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'mapped class User->user'. Original exception was: 'TableClause' object has no attribute 'metadata'
