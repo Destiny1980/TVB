@@ -2,7 +2,7 @@
 {% import 'bootstrap/wtf.html' as wtf %}
 
 {% block current_app_content %}
-    <h1>{{ _('Hi, %(username)s!', username=current_user.username) }}</h1>
+    <h1>{{ _('Hi, Welcome to TVB %(username)s!', username=current_user.username) }}</h1>
     {% if form %}
         {{ wtf.quick_form(form) }}
         <br>
