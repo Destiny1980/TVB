@@ -15,4 +15,9 @@ class Config(object):
     MAIL_PASSWORD = os.environ.get('MAIL_PASSWORD')
     ADMINS = ['your-email@example.com']
     LANGUAGES = ['en', 'es', 'zh']
-    POSTS_PER_PAGE = 25
+    POSTS_PER_PAGE = 2
+
+    UPLOAD_FOLD = '/static/usericon/'
+    UPLOAD_DATA = basedir + "/app" + "/static/upload/"
+    UPLOAD_FOLDER = basedir + "/app" + UPLOAD_FOLD
+    ALLOWED_EXTENSIONS = {'jpg', 'png', 'bmp'}
